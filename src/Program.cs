@@ -32,7 +32,7 @@ app.MapGet("/bug", () =>
     }
     catch (Exception e)
     {
-        logger.Error($"Erro ao executar a função: {e.Message}");
+        logger.Error($"Erro ao executar a funcao: {e.Message}");
         return Results.BadRequest("Not OK");
     }
     return Results.Ok("OK");
@@ -50,10 +50,10 @@ app.MapGet("/bug", () =>
 //    }
 //    catch (Exception e)
 //    {
-//        logger.Error($"Erro ao executar a função: {e.Message}");
+//        logger.Error($"Erro ao executar a funcao: {e.Message}");
 //        return Results.BadRequest("Not OK");
 //    }
-//    return Results.Ok($"O resultado da função é: {x}");
+//    return Results.Ok($"Resultado da funcao: {x}");
 //});
 
 //app.MapGet("/greetAnotherServer", async () => {
