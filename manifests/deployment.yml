@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hiperdev-api
+  name: hiperdev-api-balves
   namespace: hiperdev
 spec:
   selector:
     matchLabels:
-      app: hiperdev-api
+      app: hiperdev-api-balves
   template:
     metadata:
       labels:
-        app: hiperdev-api
+        app: hiperdev-api-balves
     spec:
       containers:
-      - name: hiperdev-api
+      - name: hiperdev-api-balves
         image: hiperdevcr.azurecr.io/hiperdev
         resources:
           limits:
