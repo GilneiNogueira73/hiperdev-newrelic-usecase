@@ -45,7 +45,6 @@ app.MapGet("/lazy", () =>
    {
        var z = 10;
        var y = 20;
-       Thread.Sleep(10000);
        x = z * y;
    }
    catch (Exception e)
